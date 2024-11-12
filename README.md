@@ -31,3 +31,14 @@ db2 connect to testdb
 5.source /database/config/db2inst1/sqllib/db2profile 
 
 6.db2start 
+
+Now for running the project go to terminal and cd into the project folder
+Then compile like below :
+
+
+ javac -cp .:db2jcc.jar *.java    
+
+Now we can run the specific test class , for eg if we want to run ListDemographicInfo then execute command like this :
+
+
+java -cp .:db2jcc.jar ListDemographicInfo   
