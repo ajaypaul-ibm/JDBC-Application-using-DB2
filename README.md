@@ -22,15 +22,15 @@ docker run -d --name db2_container \
 3.Verify the Container: After running the container, you can verify that it's running properly with:
 docker ps
 
-
-4.Connect to DB2: Once the container is running, connect to the DB2 instance as described previously:
+4. docker start dockerid(which you will get when docker is created)
+5.Connect to DB2: Once the container is running, connect to the DB2 instance as described previously:
 docker exec -it db2_container bash -c "su - db2inst1"
 db2 connect to testdb 
 
 
-5.source /database/config/db2inst1/sqllib/db2profile 
+6.source /database/config/db2inst1/sqllib/db2profile 
 
-6.db2start 
+7.db2start 
 
 Now for running the project go to terminal and cd into the project folder
 Then compile like below :
