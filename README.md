@@ -30,8 +30,8 @@ docker ps
 
 6.docker exec -it db2_container bash -c "su - db2inst1"
 
-
-7.db2
+7.source /database/config/db2inst1/sqllib/db2profile 
+7.db2Start
 8. LIST TABLES;
 
 Now for running the project go to terminal and cd into the project folder
