@@ -23,6 +23,8 @@ docker run -d --name db2_container \
 docker ps
 
 4. docker start dockerid(which you will get when docker is created)
+
+
 5.Connect to DB2: Once the container is running, connect to the DB2 instance as described previously:
 docker exec -it db2_container bash -c "su - db2inst1"
 db2 connect to testdb 
